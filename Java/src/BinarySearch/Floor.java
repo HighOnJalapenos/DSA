@@ -2,8 +2,8 @@ package BinarySearch;
 
 import java.util.Scanner;
 
-public class Ceiling {
-    static int ceiling(int arr[], int target){
+public class Floor {
+    static int floor(int arr[], int target){
         int s = 0;
         int e = arr.length-1;
 
@@ -19,7 +19,7 @@ public class Ceiling {
             }
         }
 
-        return s;
+        return e;
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -31,6 +31,6 @@ public class Ceiling {
         }
         int target = sc.nextInt();
 
-        System.out.print(arr[ceiling(arr, target)]);
+        System.out.print(arr[floor(arr, target)]);
     }
 }
